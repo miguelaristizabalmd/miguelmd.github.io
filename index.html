@@ -366,21 +366,25 @@
       text-underline-offset: 4px;
     }
 
-    .contact-box {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items: center;
-      justify-content: space-between;
-      padding: 22px;
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-    }
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 22px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
 
-    .contact-box p {
-      margin: 0;
-    }
+.contact-box p {
+  margin: 0;
+}
+
+.patient-care-note {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
 
     footer {
       padding: 34px 0 46px;
@@ -613,17 +617,22 @@
       <div class="section-heading">
         <h2>Contact</h2>
 
-        <div class="section-body">
-          <div class="contact-box">
-            <p>For business inquiries, consulting, speaking requests, research, or academic collaboration:</p>
-            
-            <a class="button primary" href="mailto:miguel.aristizabalmd@gmail.com">Email</a>
-           
-            <p class="patient-care-note">
-            Seeking dermatologic care at Mayo Clinic Florida? Visit the Mayo Clinic
-            website to request an appointment.
-          </p>
-          </div>
+<div class="contact-box">
+  <p>
+    For business inquiries, consulting, speaking requests, research, or academic collaboration:
+  </p>
+
+  <a
+    class="button primary"
+    href="mailto:miguel.aristizabalmd@gmail.com"
+  >
+    Email
+  </a>
+
+  <p class="patient-care-note">
+    Seeking dermatologic care at Mayo Clinic Florida? Visit the Mayo Clinic website to request an appointment.
+  </p>
+</div>
         </div>
       </div>
     </section>
